@@ -2,6 +2,6 @@
 
 for i in *.txt; do
     actual_name= echo $"$i"
-    cp "$i" "$i.bak" | sed 's/the/an/' "$i.bak" 
+    cp "$i" "$i.bak" | sed -i 's,the,an,g' $echo "$i.bak" 
      
 done
