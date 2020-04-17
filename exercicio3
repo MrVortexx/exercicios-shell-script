@@ -1,0 +1,7 @@
+#!usr/bin/env bash 
+
+for i in *.c; do
+    actual_name= echo $"$i"
+    mv "$i" "$i.old" 
+     
+done

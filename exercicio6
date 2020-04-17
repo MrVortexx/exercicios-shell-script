@@ -1,0 +1,13 @@
+#!usr/bin/env bash
+
+#N pode ser qualquer numero de 1 a 9
+n=5
+atual=1
+exibir
+for((i=0;i<n;i++)) do
+    for ((j=0;j<atual;j++)) do
+          exibir=$(( ))
+    done
+    atual=$((atual+1))
+    
+done
