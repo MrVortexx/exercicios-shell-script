@@ -2,6 +2,10 @@
 
 for i in *.txt; do
     actual_name= echo $"$i"
+<<<<<<< HEAD
     cp "$i" "$i.bak" | sed -i 's,the,an,g' $echo "$i.bak" 
+=======
+    cp "$i" "$i.bak" | sed -i 's/the/an/' "$i.bak" 
+>>>>>>> 8a464dc14279546a1aa265a035e09ac25dbe56d0
      
 done
