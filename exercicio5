@@ -1,0 +1,18 @@
+#!usr/bin/env bash
+
+
+start=$(date +%s) 
+#end == start + 120s -> 2 minutos rodando 
+end=$(( $start + 120))
+
+    while [ $(date +%s) -lt $end ]; do
+        sleep 4
+        now=$(date +%s)
+        module=$(($atual%5))
+        if [[ module -eq 0 ]]; then
+
+            echo "$(date +%s) eh divisivel"
+
+        else echo "$(date +%s) nao eh divisivel"
+        fi
+    done
