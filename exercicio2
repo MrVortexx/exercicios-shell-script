@@ -1,0 +1,14 @@
+#!usr/bin/env bash
+
+n=10
+acumulado=0
+acumulador=1
+total=0
+for((i=0;i<n;i++)) do
+    echo "$i $total"
+       total=$((acumulado + acumulador))
+        acumulado=$acumulador  
+         acumulador=$total 
+     
+    
+done
